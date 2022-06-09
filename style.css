@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luxurious+Roman&family=Major+Mono+Display&family=Open+Sans:ital,wght@0,400;0,500;1,300&family=Public+Sans:ital,wght@0,100;0,200;0,700;1,100&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h1 {
+  font-family: 'Luxurious Roman', cursive;
+
+}
+
+p {
+
+  font-family: 'Roboto', sans-serif;;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+}
+
+/* Mobile Nav */
+
+nav {
+  display: flex;
+  width: 50%;
+  flex-flow: row nowrap;
+  font-family: 'Questrial', sans-serif;
+
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+main {
+  display:flex;
+  flex-flow: column nowrap;
+  width: 100%;
+
+  color: white;
+}
+
+#sign-in {
+  display: inline;
+  
+}
+
+.heroimage {
+    background-image: url(./images/pexels-eva-elijas-5503338.jpg);
+    width: 100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    padding-bottom: 300px; 
+    padding-top: 100px ;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+
+
+
+}
+
+.hero__box {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+}
+
+.left__block {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+}
+
+.hero__content {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #FDD65B;
+  width: 100%;
+  justify-content: center;
+  padding-top: 100px;
+  
+}
+
+
+.heroimage h1 {
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 25px;
+  font-size: 3.8rem;
+  position: sticky;
+  flex-wrap: nowrap;
+  
+}
+
+
+.heroimage h2 {
+  padding-left: 150px;
+  width: 70%;
+  line-height: .2rem;
+}
+
+.hero__btn {
+  background-color: #00715D;
+  border: none;  
+  padding: 20px;
+  width: auto;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 25px;
+  
+
+}
+
+.accomplishments {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 100px;
+  background-color: #00715D ;
+  align-items: center;
+}
+
+
+
+
+.acc-card-box {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 85%;
+  max-height: 75%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+
+}
+
+
+.acc-card {
+  border-radius: .5rem;
+  width: auto;
+  background-color: #F9F5E8;
+  color: black;
+  transition: 500ms;
+  text-align: center;
+
+
+  
+}
+
+.acc-card>strong {
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 1.5rem;
+}
+
+.acc-card:hover {
+  box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.093);
+}
+
+#box1, #box2, #box3 {
+  width: 50%;
+  grid-row: 1 / 2;
+  padding: 0;
+  margin: 15px
+
+
+}
+
+#box1, #box2, #box3 p {
+  grid-row: 2 / 3;
+
+}
+
+
+.services {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F9F5E8;
+
+  color: black;
+}
+
+.services h3 {
+  font-size: 2.1rem;
+
+}
+
+.break {
+  border-bottom: 2px solid grey;
+  width: 75%;
+  align-self: center;
+  display: none;
+}
+
+.team {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F9F5E8;
+  padding-bottom: 100px;
+  color: black;
+  width: 100%;
+}
+
+.team__photo {
+  margin-top: 100px;
+  width: 100vw;
+  height: 100vw;
+  border-radius: 100%;
+
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.team__descr  {
+  background-color: white;
+  width: 65%;
+  align-self: center;
+  margin-top: 100px;
+
+}
+
+.team__descr h4 {
+  font-size: 12vw;
+  z-index: 1;
+}
+
+.team__descr h4::before {
+  content: "";
+  border-bottom: 2px solid black;
+  width: 15%;
+  padding: 10px;
+  margin-left: 25px;
+  z-index: -1;
+}
+
+.team__descr p {
+  padding: 25px;
+}
+
+
+.learn {
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #00715D;
+  width: 100%;
+
+}
+
+.learn h5 {
+  color: white;
+  font-size: 3rem;
+}
+
+.contact-btn {
+  margin: 0;
+  padding: 25px;
+  width: auto;
+  align-self: center;
+  border: none;
+  background-color: #FDD65B;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 1.3rem;
+
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 500px;
+  align-self: right;
+
+}
+
+
+
+@media (min-width: 800px) {
+
+
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto 1fr;
+}
+
+h1 {
+  font-family: 'Luxurious Roman', cursive;
+
+}
+
+p {
+
+  font-family: 'Roboto', sans-serif;;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    display: flex;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+
+}
+
+header strong {
+  font-size: 2vw;
+  margin-left: 10px;
+}
+
+header em {
+  color: #FDD65B;
+}
+
+nav {
+  padding: 0;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  align-self: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+
+a {
+  text-decoration: none;
+  transition: 500ms;
+}
+
+
+
+a:visited {
+  color: black;
+}
+
+
+#sign-in {
+  background-color: #00715D;
+  border: none;  
+  padding: 20px;
+  width: 150px;
+  align-self: center;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 50px; 
+  margin-right: 25px; 
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+  transition: 500ms;
+
+}
+
+#sign-in:focus {
+  transform: scale(0.9);
+}
+
+
+main {
+  display: grid;
+  width: 100%;
+  color: white;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.hero__box {
+  display: grid;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  color: black;
+  
+}
+
+
+
+.left__block {
+  background-color: #F9F5E8;
+  width: 100%;
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  z-index: -1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.orange_block {
+  background-color: #FDD65B;
+  width: 100%;
+  grid-column: 3 / 5;
+  grid-row: 1 / 4;
+  z-index: -10;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+  
+}
+
+
+.heroimage {
+    background-image: url(./images/pexels-eva-elijas-5503338.jpg);
+    width: 700px;
+    height: 900px;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+}
+
+
+.hero__content {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #F9F5E8;
+  width: 75%;
+  justify-content: center;
+  text-align: left;
+  z-index: 9999;
+  padding-bottom: 150px;
+  padding-left: 150px;
+  padding-top: 150px; 
+}
+
+.hero__content em {
+  color: #FDD65B;
+}
+
+
+.hero__box h1 {
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 6vw;
+  
+  
+  
+}
+
+
+.hero__content h2 {
+  padding-left: 75px;
+  width: 80%;
+  margin-top: 25px;
+}
+
+.hero__btn {
+  background-color: #00715D;
+  border: none;  
+  padding: 20px;
+  width: 225px;
+  align-self: center;
+  margin-top: 100px;
+  font-size: 1.9rem;
+  color: white;
+  margin-bottom: 25px;
+  border-radius: 50px;
+  margin-left: 300px ;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+  transition: 500ms;
+}
+
+.hero__btn:focus {
+  transform: scale(0.9);
+}
+
+.accomplishments {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding-bottom: 100px;
+  background-color: #00715D ;
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+ .accomplishments img {
+  margin: auto;
+  margin-top: 100px;
+  grid-row: 1 / 2;
+ }
+
+ .accomplishments strong {
+   font-size: 5rem;
+   margin-bottom: 10px;
+
+ }
+ 
+ .accomplishments strong::before {
+   content: "";
+   border-bottom: 3px solid white;
+   width: 100%;
+   z-index: -1;
+   padding: 25px;
+  
+
+ }
+ 
+ .accomplishments>div {
+   text-align: center;
+ }
+
+ 
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  background-color: #F9F5E8;
+  color: black;
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  width: 100%;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+
+.services h3 {
+  margin-top: 150px;
+  margin-left: 75px;
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+  font-size: 3.8vw;
+
+}
+
+.services h3::before {
+  content: "";
+  border-bottom: 2px solid black;
+  width: 45%;
+  padding: 10px;
+  margin-left: 25px;
+  z-index: -1;
+}
+
+.services p {
+  font-size: 1.7rem;
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+  width: 95%;
+  margin-top: 100px;
+  padding-bottom: 25px;
+}
+
+.services button {
+  font-size: 2vw;
+  grid-column: 6 / 9;
+  grid-row: 6 / 7;
+  align-self: center;
+  margin: 0 auto;
+  border: none;
+  background-color: #00715D ;
+  border-radius: 50vh ;
+  padding: 25px;
+  color: #F9F5E8;
+}
+
+#card-title1, #card-title2, #card-title3 strong {
+  font-size: 1.5vw;
+  align-self: center;
+  justify-self: center;
+  padding: 25px;
+
+}
+
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #F9F5E8;
+
+  color: black;
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+  justify-content: center;
+
+}
+
+.team__photo {
+  margin-top: 100px;
+  width: 60vw;
+  max-height: 60vw;
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  border-radius: 100%;
+  object-fit: contain;
+  justify-self: center;
+  overflow: hidden; 
+}
+
+.team__descr  {
+  background-color: white;
+  width: 45%;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  margin-bottom: 350px;
+  margin-left: 200px;
+  z-index: 1;
+
+}
+
+.team__descr h4 {
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.team__descr h4::before {
+  content: "";
+  border-bottom: 2px solid black;
+  width: 15%;
+  padding: 10px;
+  margin-left: 25px;
+  z-index: -1;
+}
+
+.team__descr p {
+  padding: 25px;
+  font-size: 1.5rem;
+}
+
+.team_card1 {
+    width: 100%;
+    height: 65vh;
+    grid-column: 2 /  4 ;
+    grid-row: 4 / 7;
+    background-image: url(./images/pexels-greta-hoffman-7728714.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;   
+    justify-content: center;
+    margin-right: 5px; 
+    transition: 500ms;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+    border-radius: .5vh;
+
+}
+
+.team_card1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.084);
+}
+
+.team_card2 {
+  width: 100%;
+  height: 65vh;
+  grid-column: 4 /  6 ;
+  grid-row: 4 / 7;
+  background-image: url(./images/pexels-greta-hoffman-7728740.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 500ms;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+    border-radius: .5vh;
+
+}
+
+.team_card2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.084);
+}
+
+#card-title1{
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  padding-bottom: 50px;
+  margin-top: 50vh;
+
+}
+
+#card-title2{
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  padding-bottom: 50px;
+  margin-top: 50vh;
+
+}
+
+#card-title3{
+  width: 100%;
+  background-color: white;
+  height: 15vh;
+  padding-bottom: 50px;
+  margin-top: 80vh;
+  margin-right: 15px;
+
+}
+
+.team_card3 {
+  width: 100%;
+  height: 95vh;
+  grid-column: 6 / 9;
+  grid-row: 2 / 6;
+  background-image: url(./images/pexels-maria-naichenko-8219462.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 500ms;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+    border-radius: .5vh;
+}
+
+.team_card3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.084);
+}
+
+.learn {
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #00715D;
+  width: 100%;
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+
+}
+
+.learn h5 {
+  color: white;
+  font-size: 3rem;
+  align-self: center;
+}
+
+
+.contact-btn {
+  margin: 0;
+  padding: 25px;
+  width: 200px;
+  border: none;
+  background-color: #FDD65B;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+
+}    
+
+/*Footer Design */
+
+
+footer {
+  grid-row: 6 / 7;
+  grid-column: 1 / 4;
+  background-color: #F9F5E8;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  padding-bottom: 25px;
+  justify-content: center;
+
+}
+span {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#contact {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  grid-column: 1 / 4;
+  grid-row: 2 /  3;
+  z-index: 10;
+}
+
+h6 {
+  font-size: 5vw;
+  padding: 0px;
+  margin: 35px;
+  padding-left: 125px;
+}
+
+/* Form Style */
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+  align-self: center;
+  margin:0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+form input {
+background-color: #F9F5E8;
+width: 300px;
+box-sizing: border-box;
+border: none;
+border-bottom: 4px solid green;
+margin-bottom: 5px;
+padding: 15px;
+font-size: 1.5rem;
+}
+
+form label {
+   font-size: 2rem;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: none;
+  background-color: #F9F5E8;
+  border-bottom: 4px solid green;
+  padding-bottom: 15px;
+}
+
+.form-btn {
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 55px;
+  width: 150px;
+  margin-right: 200px;
+  border: none;
+  background-color: #FDD65B;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.084);
+
+
+}
+
+/* End Form Style */
+
+
+.gallery-box, .marketplace-box, .magazine-box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 65%;
+  grid-row: 2 / 3;
+  margin-top: 20vh;
+
+}
+
+.gallery-box ul, .marketplace-box ul , .magazine-box ul {
+  font-size: 5vh;
+}
+
+.gallery-box li, .marketplace-box li , .magazine-box li {
+  display: block;
+  font-size: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+
+
+
+
+/* End Footer Style */
+
+
+
+.break {
+  display: flex;
+width: 100%;
+background-color: #00715D;
+padding-bottom: 100px;
+grid-column: 1 / 4 ;
+grid-row: 6 / 7;
+}
+
+
+
+/* Sign Up Form*/
+
+.sign-up-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+a, a:visited {
+  color: black;
+}
+
+.sign-up-container h1 {
+  margin: 0 auto;
+  font-size: 3vw;
+  width: 35%;
+  text-align: left;
+  margin-top: 15vh;
+}
+
+#signup {
+  display: flex;
+  margin-top: 5vh;
+  width: 50%;
+  margin-bottom: 25vh;
+  
+}
+
+.sign-up-container p {
+  font-size: 2vh;
+  margin-right: 50px;
+}
+
+
+.radio-btns {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.radio-btns input{
+  margin: 15px;
+}
+
+#experience {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#radio-label {
+  margin-top: 15px;
+
+}
+
+#sign-up-submit {
+  width: 10vw;
+  align-self: center;
+  padding: 20px;
+  border-radius: 5vh;
+  border: none;
+  background-color: #00715D;
+  color: white;
+  font-size: 2vh;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.42);
+  transition: 50ms;
+}
+
+#sign-up-submit:focus {
+  transform: scale(0.8);
+}
+
+
+#box1, #box2, #box3 {
+  width: 50%;
+  grid-row: 1 / 2;
+
+}
+
+#box1 strong, #box2 strong, #box3 strong {
+  width: 50%;
+  grid-row: 1 / 2;
+
+
+
+}
+
+#box1 p, #box2 p, #box3 p {
+
+  width: 65%;
+  margin: 0 auto;
+  font-size: 2vh;
+  text-align: center;
+}
+
+}
+

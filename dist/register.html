@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/main.d9ee62f6.bc1569d7.css">
+    <title>Login to track your compost!</title>
+</head>
+<body>
+
+    <div class="login">
+            <header class="login__header">
+                <header>
+                    <strong><em>ELA</em>Compost</strong>
+                    <nav>
+                        <ul>
+                            <a href="/index.html"><li>HOME</li></a>
+                            <a href="#services"><li>HOW-TO</li></a>
+                            <a href="#contact"><li>CONNECT</li></a> 
+                            
+                            
+        
+                        </ul>
+                    </nav>
+                    <button id="sign-in" onclick="location.href='https://elacompost.info/login.html';">Sign In</button>
+                </header>
+
+                
+
+            </header>
+
+
+
+            <main class="login__main center">
+
+                <div class="login__main-login center">
+                    <h2>Register</h2>
+                    <p class="center"> Keep track of your compost weight and know how much you've diverted!</p>
+
+
+
+                    <form action="register.php" method="post">
+                       <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" placeholder="First Name" id="first-name">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" placeholder="Last Name" id="last-name">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" placeholder="Email Address" id="reg-email">
+                        <label for="passwords">Create Password</label>
+                        <input type="text" name="passwords" placeholder="Create Password" id="password">
+                        <label for="composting">Are you already composting?</label>
+                        <select name="composting" id="composting">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+
+                        </select>
+
+                        <button class="login__main-login-btn" id="register">
+                            Register
+                        </button>
+                    </form>
+
+                        <p id="register-link">Already have an account? <a href="/login.html">Log-In</a> </p>
+                </div>
+
+
+            </main>
+
+
+    </div>
+    
+</body>
+</html>

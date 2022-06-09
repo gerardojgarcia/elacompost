@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Astrid",
+      "last_name": "Payan",
+      "email": "Daniela@gmail.com",
+      "composting": true,
+      "compost_record": "256lb"
+    },
+    {
+      "id": 2,
+      "first_name": "Carmen",
+      "last_name": "Meza",
+      "email": "carmen@gmail.com",
+      "composting": true,
+      "compost_record": "69lb"
+    },
+    {
+      "id": 3,
+      "first_name": "Jennifer",
+      "last_name": "Payan",
+      "email": "jennifer@gmail.com",
+      "composting": true,
+      "compost_record": "256lb"
+    },
+    {
+      "id": 4,
+      "first_name": "Michelle",
+      "last_name": "Payan",
+      "email": "Daniela@gmail.com",
+      "composting": false,
+      "compost_record": "256lb"
+    }
+  ]
+}

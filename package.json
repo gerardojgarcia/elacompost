@@ -1,0 +1,22 @@
+{
+  "name": "elacompost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel ./index.html ./login.html ./register.html ./register.php",
+    "build": "parcel build ./index.html",
+    "server": " json-server --watch db.json --port 5000"
+  },
+  "keywords": [],
+  "author": "Gerardo Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.49.11"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "nodejs": "^0.0.0"
+  }
+}
